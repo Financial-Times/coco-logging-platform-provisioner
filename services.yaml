@@ -19,24 +19,28 @@ services:
   - name: image-cleaner.timer
     uri: https://raw.githubusercontent.com/Financial-Times/fleet/master/image-cleaner.timer
   - name: elasticsearch@.service
-    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elasticSearch/elasticsearch@.service
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elastic-search-1.7/elasticsearch@.service
     count: 1
   - name: elasticsearch-sidekick@.service
-    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elasticSearch/elasticsearch-sidekick@.service
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elastic-search-1.7/elasticsearch-sidekick@.service
     count: 1
   - name: restorage-es@.service
-    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elasticSearch/restorage-es@.service
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elastic-search-1.7/restorage-es@.service
     count: 1
   - name: restorage-es-sidekick@.service
-    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elasticSearch/restorage-es-sidekick@.service
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elastic-search-1.7/restorage-es-sidekick@.service
     count: 1
   - name: kibana@.service
-    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elasticSearch/kibana@.service
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elastic-search-1.7/kibana@.service
     count: 1
   - name: kibana-sidekick@.service
-    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elasticSearch/kibana-sidekick@.service
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elastic-search-1.7/kibana-sidekick@.service
     count: 1
   - name: vulcan-config-builder.service
-    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elasticSearch/vulcan-config-builder.service    
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/elastic-search-1.7/vulcan-config-builder.service    
   - name: tunnel-registrator.service
     uri: https://raw.githubusercontent.com/Financial-Times/fleet/master/tunnel-registrator.service
+  - name: aggregate-healthcheck@.service
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/master/aggregate-healthcheck@.service
+  - name: aggregate-healthcheck-sidekick@.service
+    uri: https://raw.githubusercontent.com/Financial-Times/fleet/master/aggregate-healthcheck-sidekick@.service          
